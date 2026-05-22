@@ -82,10 +82,7 @@ function abc(sum){
     
 return sum;
 };
-console.log(abc(sum));
-function sum(curdate,birthY){
-return (curdate-birthY);
-}
+
 
 function abc(sum){
     console.log(sum);
