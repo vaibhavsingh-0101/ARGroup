@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family:Vaibhav ;
+    src: url(./Magnetik-ExtraLight.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: vaibhav;
+}
+
+/* body{
+  
+    background-color: black;
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+#box2{
+    width:200px;
+    height: 200px;
+    background-color: thistle;
+    transition:transform 1s ease ;
+   transform-origin: right bottom ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  animation: Scaling 2s ease 2 alternate-reverse forwards  ;
+   
+}
+#box2:hover{
+    
+    /* width:400px ;
+    height: 400px; */
+transform: skewX(-45deg);
+}
+
+@keyframes Scaling {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(500px) ;
+    }
+   
+} */

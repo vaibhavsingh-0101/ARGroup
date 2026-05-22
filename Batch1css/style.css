@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: "Edu AU VIC WA NT Guides", cursive;
+
+}
+html,body{
+   
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    font-size:300px;
+}
+.box:hover #box2{
+    height: 50%;
+    width: 60%;
+}
+#box2{
+    width: 40%; 
+    height: 40%;
+    background-color: brown;
+    font-size: 2rem;
+    transition: .5s ease;
+}
+.box3{
+    width: 50Vw;
+    height: 30vh;
+   background-color: aliceblue;
+}                         
+input{
+    width: 200px;
+    height: 60px;
+  
+    border-style: none;
+    transition: .3s ease;
+}
+input:focus{
+  border-radius: 20px;
+}
+a{
+    color:red;
+    text-decoration: none;
+    font-size:3rem;
+position: relative;
+}
+/* a:active{
+    color: aqua;
+} */
+
+a::after{
+  content: " ";
+  width: 3px;
+  height:3px;
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  left: 0px;
+
+  transition: .3s ease;
+}
+
+a:hover::after{
+    width: 80%;
+}                      

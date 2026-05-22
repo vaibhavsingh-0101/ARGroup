@@ -1,0 +1,26 @@
+@import url("comcss.css");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px 0px;
+    background-color: #d5cfc1;
+}
+.Header_overlay{
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left{
+    display: flex;
+    gap: 60px;
+}
+.header_left>img{
+    width: 50px;
+}

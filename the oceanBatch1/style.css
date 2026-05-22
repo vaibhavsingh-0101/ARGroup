@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora&display=swap');
+
+:root{
+    --text-dark:#000;
+    --text-light:#3b3b3b;
+    --text-white:#fff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Croissant One", serif;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#hero_section{
+    width: 100%;
+    height: 100Vh;
+    background-color: black;
+h1{
+    color: white;
+    font-size: 8rem;
+
+}
+h2{
+    color: white;
+    font-size: 2rem;
+}
+}
+
+#overlay_header{
+
+    display: flex;
+    justify-content: space-between;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: white;
+     width: 90%;
+     margin: auto;
+    h1,a{
+        color: var(--text-white);
+    }
+   
+
+}
+#hero_center{
+  
+    width: 1000px;
+    display: flex;
+    position: relative;
+ 
+}
+
+#hero_center>img{
+    width: 200px;
+    height: 250px;
+}
+
+#hero_center>h1{
+
+      
+        bottom: 10px;
+        position: absolute;
+left: 30%;
+}
+
+#hero_right>nav>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    li{
+        list-style: none;
+        text-align: end;
+        a{
+            text-decoration: none;
+            
+        }
+    }
+
+}
+.btn{
+padding: 5px 20px;
+transition: .3s ease;
+}
+.Anc_sction{
+    width: 90%;
+    height: 20.5%;
+    margin: auto;
+    display: flex;
+   border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    position: relative;
+}
+.Anc_sction {
+img{
+    width: 150px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0px 200px 200px 0px;
+    position: absolute;
+    left: 60%;
+}
+h1{
+    position: absolute;
+    top: -55px;
+left: 10%;
+z-index: 1;
+}
+}
+
+.circle_section{
+     width: 90%;
+    height: 20.5%;
+    margin: auto;
+    display: flex;
+   border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    position: relative;
+}
+.circle_section{
+    img{
+        width: 160px;
+        height:160px;
+        border-radius: 50%;
+   left: 15%;
+        position: absolute;
+    }
+    h1{
+    font-size: 9rem;
+    position: absolute;
+    left: 30%;
+    top: -60px;
+    }
+}

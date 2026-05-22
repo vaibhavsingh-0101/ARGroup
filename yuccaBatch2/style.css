@@ -1,0 +1,444 @@
+@import url(./universalcss.css);
+@font-face {
+    font-family:Yucca_font ;
+    src: url(./Magnetik-Light.otf);
+}
+:root{
+    --primary-color:#d3cdc0;
+    --secondry-color:#fffdf5;
+    --text-darker:#1d1d1b;
+    --text-white:#faf8f0;
+}
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Yucca_font;
+    background-color: var(--primary-color);
+    overflow-x:hidden ;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.0);
+    padding: 20px 0px;
+    position: fixed;
+     li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: var(--text-darker);
+
+        }
+    }
+    border-bottom-width: .3px;
+    border-bottom-color:#49494792;
+    border-bottom-style: solid;
+    z-index: 10;
+}
+.overlay_header{
+width: 90%;
+margin: auto;
+}
+.left_header{
+   gap: 60px;
+}
+
+.header_log{
+    gap: 8px;
+    img{
+        width: 60px;
+    }
+}
+
+.left_header>nav{
+    a{
+       position: relative; 
+       white-space: nowrap;
+       font-size: 15px;
+    }
+    a::before{
+content: "";
+width: 100%;
+height: 0px;
+background-color: black;
+position: absolute;
+bottom: -40px;
+border-radius: 30px 30px 0px 0px;
+transition: all .3s ease
+;
+    }
+    a:hover::before{
+        height: 4px;
+    }
+}
+
+.cart{
+    width: 40px;
+    height: 40px;
+    background-color:var(--primary-color);
+    border: 1px solid rgba(0, 0, 0, 0.607);
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.cart a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.uppar_cart,.lower_cart{
+    position: absolute;
+    transition: .3s ease;
+}
+
+.uppar_cart{
+ transform: translateY(0px);
+}
+.lower_cart{
+    transform: translateY(60px);
+}
+.cart:hover{
+    .uppar_cart{
+        transform: translateY(-60px);
+    }
+    .lower_cart{
+        transform: translateY(0px);
+    }
+}
+.login_cart{
+    background-color: #1d1d1b; padding: 5px 10px;
+    border-radius: 10px;
+     transition: .3s ease;
+a,i{
+    color: white;
+    transition: .3s ease;
+}
+
+}
+.login_cart:hover{
+    background-color: #1d1d1bcb;
+    i{
+        transform: rotate(180deg);
+    }
+    
+}
+.hero_section{
+    position: relative;
+ width: 100%;
+ height: 100%;
+}
+.overlay_hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.txt_hero{
+    width: 100%;
+    height: 100%;
+background-color:rgba(230, 230, 250, 0.0);
+position: absolute;
+}
+.img_hero{
+    width: 100%;
+    height: 100Vh;
+    
+    img{
+        width: 100%;
+        height: 100%;
+object-fit: cover;
+    }
+}
+.txt_hero{
+
+
+    h1{
+         margin: 130px 0px 0px 80px;
+        font-size: 70px;
+        font-weight: 100;
+    }
+}
+.box_conatiner{
+    width: 90%;
+    margin: auto;
+    
+}
+.crad_hero{
+    width: 300px;
+    height: 300px;
+    background-color:rgba(255, 255, 255, 0.259);
+    border-radius: 10px;
+    position: relative;
+    backdrop-filter: blur(20px);
+}
+.crad_hero:hover{
+    .card_head>h2{
+        transform: translateY(-30px);
+        color: #1d1d1b;
+        background-color: #faf8f0;
+    }
+}
+.card_frt{
+    width: 100%;
+    height:100% ;
+    background-color:var(--secondry-color);
+    position: absolute;
+    padding: 15px;
+   opacity: 0;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+
+.card_bk{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+}
+.card_head{
+    width: 100%;
+    height:30px;
+  
+    text-align: center;
+    overflow: hidden;
+    h2{
+        transition: .3s ease;
+    }
+}
+
+.crad_frt_p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.card_para{
+
+    width: 100%;
+    height:20px;
+    overflow: hidden;
+    p{
+        font-size: 15px;
+        transform: translateY(20px);
+        transition: .5s ease;
+
+    }
+}
+.crad_hero:hover{
+    .card_frt{
+      opacity: 1;
+    }
+ .card_para{
+    p{
+        transform: translateY(0px);
+    }
+ }
+ .crad_slider{
+    width: 100%;
+ }
+ .card_arrow_icon>i{
+    transform: translateX(0px);
+ }
+}
+.crad_slider{
+    width: 0px;
+   border: 1px  solid black;
+   transition: .5s ease;
+}
+.card_arrow_icon{
+    width: 30px ;
+    height: 30px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   i{
+     transform: translateX(-40px);
+     transition: .5s ease;
+     font-weight: 100px;
+   }
+}
+.card_arror_section{
+    gap: 10px;
+    flex-direction: column;
+}
+.card_arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.marquee{
+    width: 100%;
+    height: 100%;
+    background-color:  var(--primary-color);
+    background-image: url("https://yucca.co.za/wp-content/uploads/2025/05/1c9fd89a470793175cfc7f14a7a6e6dc-600x600.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: -50px;
+    h1{
+        width: max-content;
+        font-size: 60px;
+        font-weight: 100;
+      
+    }
+}
+
+.leftHeading{
+    animation:leftslider 25s linear infinite ;
+}
+.rightHeading{
+    animation: rightSlider 25s linear infinite;
+}
+@keyframes leftslider {
+    from{
+        transform: translateX(-25%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes rightSlider {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-25%);
+    }
+}
+.seeProd{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        width: 60%;
+        font-size: 30px;
+text-align: center;
+
+    }
+  
+}
+  .proBtn{
+      border-style: none;  
+      background-color: black;
+      color: var(--text-white);
+      padding: 6px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .mainimg{
+        width: 100%;
+        height: 100%;
+        background-image: url('https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-for-cold-warm-hot-food-card.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img_overlay{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ 
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .5s ease ;
+           
+        }
+    }
+   .box{
+    width: 300px;
+    height: 300px;
+    background-color: #fffdf5;
+    z-index: 1;
+     transition:  .5s ease ;
+   }
+.img1{
+ 
+    opacity: 0;
+    
+      transform: scale(1.1);
+
+}
+.img2{
+ 
+    opacity: 0;
+     transform: scale(1.1);
+    
+}
+.img3{
+  transform: scale(1.1);
+    opacity: 0;
+  
+}
+.box1:hover{
+
+    
+ transform: scale(1.2);
+ margin-right: 20px;
+}
+.box2:hover{
+margin: 0px 20px;
+    
+ transform: scale(1.2);
+}
+.box3:hover{
+
+    margin: 0px 20px;
+ transform: scale(1.2);
+}
+.box1:hover~.img1{
+
+    opacity: 1;
+ transform: scale(1);
+}
+.box2:hover~.img2{
+
+    opacity: 1;
+ transform: scale(1);
+}
+.box3:hover~.img3{
+
+    opacity: 1;
+ transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
